@@ -25,7 +25,7 @@
         </h1>
       </div>
       <div class="cal">
-        <input type="number" class="" placeholder="Mass in Kilogram" />
+        <input type="text" id="mass" placeholder="Mass in Kilogram" />
         <select name="planets" id="planets">
           <option value="">--select planet--</option>
           <option value="Earth">Earth</option>
@@ -34,8 +34,16 @@
           <option value="Venus">Venus</option>
           <option value="Uranus">Uranus</option>
         </select>
-        <button type="submit" class="btn btn-primary">Calculate Weight</button>
+        <button type="submit" class="btn btn-primary" onclick="myMass()">
+          Calculate Weight
+        </button>
+      </div>
+      <div class="answer">
+        <div id="err"></div>
+        <div class="img"></div>
+        <div id="ans"></div>
       </div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>
